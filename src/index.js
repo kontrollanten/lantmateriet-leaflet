@@ -17,8 +17,8 @@ const map = new L.Map('map', {
   continuousWorld: true,
 });
 
-new L.TileLayer(`https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/${apiKey}/?service=wmts&request=GetTile&version=1.0.0&layer=topowebb&style=default&tilematrixset=3006&tilematrix={z}&tilerow={y}&tilecol={x}&format=image%2Fpng`, {
-  maxZoom: 9,
+new L.TileLayer(`https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/${apiKey}/1.0.0/topowebb/default/3006/{z}/{y}/{x}.png`, {
+  maxZoom: 10,
   minZoom: 0,
   continuousWorld: true,
   attribution: '&copy; <a href="https://www.lantmateriet.se/en/">Lantmäteriet</a> Topografisk Webbkarta Visning, CCB',
